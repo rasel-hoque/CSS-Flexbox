@@ -1,0 +1,43 @@
+main{
+	width: 75%;
+	height: auto;
+	border: 1px solid black;
+	margin: 0 auto;
+	text-align: center;
+	display: grid;
+	grid-template-rows: 60px 100px 200px 60px;
+	grid-template-columns: repeat(3, 1fr) 150px;
+	grid-gap: 10px;
+}
+main:hover{
+	box-shadow: 5px 5px 10px black, -5px -5px 10px black;
+}
+main > div:hover{
+	box-shadow: 5px 5px 10px yellow, -5px -5px 10px yellow;
+}
+.header{
+	background-color: aqua;
+	grid-column: 1/-1;
+}
+.box1{
+	background-color: green;
+}
+.box2{
+	background-color: green;
+}
+.box3{
+	background-color: green;
+}
+.sidebar{
+	background-color: pink;
+	grid-row: 2/4;
+	grid-column: 4/5;
+}
+.mncontent{
+	background-color: blue;
+	grid-column: 1/4;
+}
+.footer{
+	background-color: aqua;
+	grid-column: 1/-1;
+}
